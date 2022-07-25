@@ -2,4 +2,6 @@
     <string name="app_name">GuesIt</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="word_is">The Word is...</string>
+    <string name="skip">Skip</string>
 </resources>
