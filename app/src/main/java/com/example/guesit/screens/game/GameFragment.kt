@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.guesit.R
-
+import com.example.guesit.databinding.FragmentGameBinding
 
 /**
  * A simple [Fragment] subclass.
