@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.fragment.NavHostFragment.findNavController
+import androidx.navigation.fragment.findNavController
 import com.example.guesit.R
 import com.example.guesit.databinding.FragmentTitleBinding
 
@@ -28,7 +28,7 @@ class TitleFragment : Fragment() {
             inflater, R.layout.fragment_title, container, false)
 
         binding.playGameButton.setOnClickListener {
-            findNavController(this).navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
+            findNavController().navigate(TitleFragmentDirections.actionTitleFragmentToGameFragment())
         }
         return binding.root
     }

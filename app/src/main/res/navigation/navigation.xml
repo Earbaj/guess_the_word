@@ -12,11 +12,12 @@
         tools:layout="@layout/fragment_score" >
         <action
             android:id="@+id/action_scoreFragment_to_gameFragment"
-            app:destination="@id/gameFragment" />
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/titleFragment" />
         <argument
             android:name="score"
-            android:defaultValue="0"
-            app:argType="integer" />
+            app:argType="integer"
+            android:defaultValue="0" />
     </fragment>
     <fragment
         android:id="@+id/titleFragment"
@@ -34,6 +35,8 @@
         tools:layout="@layout/fragment_game" >
         <action
             android:id="@+id/action_gameFragment_to_scoreFragment"
-            app:destination="@id/scoreFragment" />
+            app:destination="@id/scoreFragment"
+            app:popUpTo="@id/titleFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

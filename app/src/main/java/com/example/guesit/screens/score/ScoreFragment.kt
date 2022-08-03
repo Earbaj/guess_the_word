@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.fragment.NavHostFragment.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
 import com.example.guesit.R
 import com.example.guesit.databinding.FragmentScoreBinding
@@ -40,7 +40,7 @@ class ScoreFragment : Fragment() {
     }
 
     private fun onPlayAgain() {
-        findNavController(this).navigate(ScoreFragmentDirections.actionScoreFragmentToGameFragment())
+        findNavController().navigate(ScoreFragmentDirections.actionScoreFragmentToGameFragment())
     }
 
 }
